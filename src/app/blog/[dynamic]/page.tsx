@@ -101,7 +101,7 @@ export default async function BlogPost({ params }: { params: Promise<{ dynamic: 
       </nav>
 
       {/* Hero Image */}
-      <div className="relative container mx-auto px-4 h-[400px] mb-12">
+      <div className="relative container mx-auto px-4 max-w-4xl h-[400px] mb-12">
         <Image
           src={image || "/placeholder.svg?height=800&width=1200"}
           alt={title}
@@ -139,7 +139,7 @@ export default async function BlogPost({ params }: { params: Promise<{ dynamic: 
       </main>
 
       {/* comments */}
-      <div className="container mx-auto px-2 lg:px-12 py-12">
+      <div className="container mx-auto max-w-4xl px-2 lg:px-12 py-12">
         <PostCreator blog_id={post.id} />        
       </div>
     </div>
